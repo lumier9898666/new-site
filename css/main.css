@@ -1,0 +1,115 @@
+body{
+	/*margin: 0;
+	padding: 0;*/
+	background-color: black;
+	color: white;
+}
+html, body{
+	height: 100%;
+}
+
+
+/*#header h1{
+	font-size: normal;
+	text-align: center;
+	color: rgb(213, 208, 206);
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 40px;
+	line-height: 100px;
+}
+*/
+.hidden-xs h1{
+	font-size: normal;
+	text-align: center;
+}
+
+#name {
+	font-family: Georgia, 'Times New Roman', Times, sans-serif;
+}
+
+#name a, a:visited{
+	color:white;
+	text-decoration: none;
+}
+
+#name a:hover{
+	color:red;
+}
+
+
+
+/*#left h2{
+	font-size: 30px;
+}*/
+
+/*#header li{
+	list-style-type: none;
+	float: right;
+	font-size: 20px;
+	text-align: center;
+	font-color: red;
+	margin-top: 0px;
+	margin-right: 6px;
+	margin-bottom: 0px;
+	margin-left: 6px; 
+	
+}
+*/
+/*#header ul{
+	display: table;
+}*/
+
+
+#navbarCollapse a:hover{
+	background-color: #428bca;
+	color:white;
+}
+
+a{
+	color: white ;
+}
+a:hover{
+	text-decoration: none;
+	color:#428bca;
+}
+
+a:visited{
+	color:violet;
+}
+
+
+
+
+
+/*#left , #right {
+	min-height: : 300px;
+	padding: 0 10px;
+	width: 230px;
+}*/
+
+#center{
+	text-align: center;
+	/*padding: 0 10px;*/
+}
+
+@media (max-width: 767px){
+	.nav-pills>li{
+		float:none;
+		text-align: center;
+	}
+}
+
+.clear {
+	clear: both;
+	height: 63px;
+}
+
+.wrapper {
+	min-height: 100%;
+}
+
+footer{
+	padding: 17px 0 18px 0;
+	border-top: 1px solid #000;
+}
+

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Добро пожаловать</title>
+		<meta charset="utf-8" http-equiv="content-type" content="text/html">
+		<meta name="description" content="my web-site">
+		<meta name="keywords" content="photo, text" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link rel ="stylesheet" href="bootstrap/css/bootstrap.min.css" type="text/css">
+		<link rel="stylesheet" href="css/main.css" type="text/css" />
+</head>
+<body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<div id="content">
+
+		<div class="container-fluid">
+			<div class="row">
+				<nav role="navigation" class="navbar navbar-inverse">
+					<div class="container">
+
+						<div class="navbar-header">
+							<button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+
+								<span class="sr-only">
+									Toggle navigation
+								</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+
+						<div id="navbarCollapse" class="collapse navbar-collapse navbar-right">
+							<ul class="nav nav-pills">
+								<li class="active">
+									<a href="#">Главная</a>
+								</li>
+								<li>
+									<a href="#">Контент</a>
+								</li>
+								<li>
+									<a href="#">Информация</a>
+								</li>
+								<li>
+									<a href="#">Контакты</a>
+								</li>
+								<li>
+									<a href="#">Калькулятор</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+			<div class="hidden-xs">
+				<h1>Добро пожаловать на <span id="name"><a href="#">Almamedov.uz</a></span></h1>
+			</div>
+		</div>		
+	</div>
+	<hr>
+
+
+		<div class="wrapper">
+			<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-md-3 col-md-push-9 col-sm-3 col-sm-push-9 col-lg-3 col-lg-push-9">
+							<div id="right">
+									<form action="#" name="search" method="get">
+										<p>Поиск : <input type="text" name="words" /></p>
+										<p><input type="submit" name="search" value="Искать" /></p>
+									</form>		
+							</div>
+						</div>
+
+						<div class="col-xs-12 col-md-3 col-md-pull-3 col-sm-3 col-sm-pull-3	col-lg-3 col-lg-pull-3">
+							<div id="left">
+								<h2>Вход на сайт</h2>
+									<table>
+										<tr>
+											<td>Логин</td>
+											<td>
+												<input type="text" name="login" />
+											</td>
+										</tr>
+										<tr>
+											<td>Пароль</td>
+											<td>
+												<input type="password" name="password">
+											</td>
+										</tr>
+										<tr>
+											<td colspan="2" align="right">
+											<input type="submit" value="Войти" name="auth" />
+											</td>
+										</tr>
+										<tr>
+											<td colspan="2" align="right">
+												<a href="#">Зарегистрироваться</a>
+											</td>
+										</tr>
+									</table>
+							</div>
+						</div>
+
+						<div class="col-xs-12 col-md-6 col-md-pull-3 col-sm-6 col-sm-pull-3 col-lg-6 col-lg-pull-3">
+						 	<div id="center">
+								<h1>Здесь будет название</h1>
+								<p>Здесь будет текст</p>
+
+								<br>
+								
+
+								<div class="article">
+									<h1>Заголовок статьи</h1>
+									<p>Текст статьи...</p>	
+									<p class="right">
+									<span>12.08.2012 15:45</span>
+									<br />
+									<a href="#">Подробнее</a>
+								</p>			
+								</div>
+								
+
+								<div id="pagination">
+
+									<p>
+										<a href="#">1</a>
+										<a href="#">2</a>
+										<a href="#">3</a>
+										<a href="#">4</a>
+									</p>
+
+								</div>	
+
+							</div>
+
+						 </div>
+					</div>
+			</div>
+
+			<dir class="clear">
+				
+			</dir>
+
+		</div>
+
+		<footer>	
+			<div class="container">
+				<p class="text-center">Все права защищены &copy; 2020</p>
+			</div>
+		</footer>
+
+
+	<!-- <div id="main_content">
+		<div id="left">
+			<h2>Вход на сайт</h2>
+
+			<table>
+				<tr>
+					<td>Логин</td>
+					<td>
+						<input type="text" name="login" />
+					</td>
+				</tr>
+				<tr>
+					<td>Пароль</td>
+					<td>
+						<input type="password" name="password">
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" align="right">
+					<input type="submit" value="Войти" name="auth" />
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" align="right">
+						<a href="#">Зарегистрироваться</a>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+		<div id="right">
+			<form action="#" name="search" method="get">
+					<p>Поиск : <input type="text" name="words" /></p>
+					<p>
+						<input type="submit" name="search" value="Искать" />
+					</p>
+			</form>		
+		</div>
+
+		<div id="center">
+			<h1>Здесь будет название</h1>
+			<p>Здесь будет текст</p>
+			<hr>
+
+			<div class="article">
+				<h1>Заголовок статьи</h1>
+				<p>Текст статьи...</p>	
+				<p class="right">
+					<span>12.08.2012 15:45</span>
+					<br />
+					<a href="#">Подробнее</a>
+				</p>			
+			</div>
+			<hr>
+
+			<div id="pagination">
+				<p>
+					<a href="#">1</a>
+					<a href="#">2</a>
+					<a href="#">3</a>
+					<a href="#">4</a>
+				</p>
+			</div>	
+
+			<div class="clear"></div>
+			<hr />
+			<div id="footer">
+				<p>Все права защищены &copy; 2019</p>
+			</div>
+		</div>
+	</div> -->
+</body>
+</html>
