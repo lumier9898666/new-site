@@ -50,6 +50,15 @@
 								<li>
 									<a href="#">Калькулятор</a>
 								</li>
+
+								<li>
+
+									<div class="night-mode visible-xs">								
+						  				<input type="checkbox">
+						  				<script type="text/javascript" src="bootstrap/js/button.js"></script>
+									</div>
+
+								</li>
 							</ul>
 						</div>
 					</div>
@@ -62,56 +71,98 @@
 		</div>		
 	</div>
 	<hr>
-
-
+	
 		<div class="wrapper">
 			<div class="container">
 					<div class="row">
-						<div class="col-xs-12 col-md-3 col-md-push-9 col-sm-3 col-sm-push-9 col-lg-3 col-lg-push-9">
-							<div id="right">
+						<div class="col-xs-12 col-md-3 col-md-push-9 col-sm-0 col-lg-3 col-lg-push-9">
+
+							<div class="panel panel-info">
+								<div class="panel-heading"><div class="sidebar-header">Поиск :</div></div>
+								<div class="panel-body">
 									<form action="#" name="search" method="get">
-										<p>Поиск : <input type="text" name="words" /></p>
-										<p><input type="submit" name="search" value="Искать" /></p>
-									</form>		
+										<div class="form-group">
+											<div class="input-group">
+												<input type="search" name="words" class="form-control input-lg" placeholder="Ваш запрос">												
+												<div class="input-group-btn">
+													<button class="btn btn-default btn-lg" type="submit" name="search"><i class="glyphicon glyphicon-search"></i>
+													</button>
+												</div>
+											</div>								
+										</div>
+									</form>
+								</div>							
 							</div>
 						</div>
 
-						<div class="col-xs-12 col-md-3 col-md-pull-3 col-sm-3 col-sm-pull-3	col-lg-3 col-lg-pull-3">
-							<div id="left">
-								<h2>Вход на сайт</h2>
-									<table>
-										<tr>
-											<td>Логин</td>
-											<td>
-												<input type="text" name="login" />
-											</td>
-										</tr>
-										<tr>
-											<td>Пароль</td>
-											<td>
-												<input type="password" name="password">
-											</td>
-										</tr>
-										<tr>
-											<td colspan="2" align="right">
-											<input type="submit" value="Войти" name="auth" />
-											</td>
-										</tr>
-										<tr>
-											<td colspan="2" align="right">
-												<a href="#">Зарегистрироваться</a>
-											</td>
-										</tr>
-									</table>
+						<div class="col-xs-12 col-md-3 col-md-pull-3 col-sm-4 col-lg-3 col-lg-pull-3">
+
+							<div class="night-mode2 hidden-xs">								
+						  		<input type="checkbox">
+						  		<script type="text/javascript" src="bootstrap/js/button2.js"></script>
+							</div>
+							
+
+							<div class="panel panel-info">
+								<div class="panel-heading"><div class="sidebar-header">Вход на сайт</div></div>
+								<div class="panel-body">
+									
+									<form action="auth" action="#" method="post">
+										<div class="form-group">
+											<div class="input-group">
+												<input type="text" name="login" class="form-control input-lg" placeholder="Логин">
+												<input type="password" name="password" class="form-control input-lg" placeholder="Пароль">
+													<button class="btn btn-default btn-lg-3 col-xs-12" type="submit" name="auth">Войти</button>
+													<button class="btn btn-default btn-lg-6 col-xs-12" type="submit"><a href="#">Зарегистрироваться</a></button>
+											</div>								
+										</div>
+									</form>
+								</div>
+							</div>
+
+							<div class="panel panel-info">
+								<div class="panel-heading"><div class="sidebar-header">Голосование</div></div>
+								<div class="panel-body">
+									<form name="poll" action="function.php" method="post">
+										<div class="form-group">
+											<div class="input-group">
+												<table class="table">
+													<span>Оцените сайт</span>
+													<tr>
+														<td><input type="radio" name="variant" value="1" checked></td>
+														 <td>Вариант 1</td>
+													</tr>
+													<tr>
+														<td><input type="radio" name="variant" value="2"></td>
+														<td>Вариант 2</td>
+													</tr>
+													<tr>
+														<td><input type="radio" name="variant" value="3"></td>
+														<td>Вариант 3</td>
+													</tr>
+													<tr>
+														<td><input type="radio" name="variant" value="4"></td>
+														<td>Вариант 4</td>
+													</tr>
+													<tr>
+														<td><input type="radio" name="variant" value="5"></td>
+														<td>Вариант 5</td>
+													</tr>
+												</table>
+												<button class="btn btn-info btn-lg-3 col-xs-12" type="submit" name="poll">Голосовать</button>
+											</div>
+										</div>
+								</div>
 							</div>
 						</div>
 
-						<div class="col-xs-12 col-md-6 col-md-pull-3 col-sm-6 col-sm-pull-3 col-lg-6 col-lg-pull-3">
+						<div class="col-xs-12 col-md-6 col-md-pull-3 col-sm-8 col-lg-6 col-lg-pull-3">
 						 	<div id="center">
 								<h1>Здесь будет название</h1>
-								<p>Здесь будет текст</p>
+								<p class="clear">Здесь будет текст</p>
 
-								<br>
+								<hr>
+								<div class="margin-8"></div>
 								
 
 								<div class="article">
@@ -120,10 +171,12 @@
 									<p class="right">
 									<span>12.08.2012 15:45</span>
 									<br />
-									<a href="#">Подробнее</a>
+									<a href="#" class="btn btn-primary pull-right">Подробнее</a>
 								</p>			
 								</div>
 								
+								<div class="margin-8"></div>
+								<hr class="clear">
 
 								<div id="pagination">
 
@@ -153,78 +206,5 @@
 				<p class="text-center">Все права защищены &copy; 2020</p>
 			</div>
 		</footer>
-
-
-	<!-- <div id="main_content">
-		<div id="left">
-			<h2>Вход на сайт</h2>
-
-			<table>
-				<tr>
-					<td>Логин</td>
-					<td>
-						<input type="text" name="login" />
-					</td>
-				</tr>
-				<tr>
-					<td>Пароль</td>
-					<td>
-						<input type="password" name="password">
-					</td>
-				</tr>
-				<tr>
-					<td colspan="2" align="right">
-					<input type="submit" value="Войти" name="auth" />
-					</td>
-				</tr>
-				<tr>
-					<td colspan="2" align="right">
-						<a href="#">Зарегистрироваться</a>
-					</td>
-				</tr>
-			</table>
-		</div>
-
-		<div id="right">
-			<form action="#" name="search" method="get">
-					<p>Поиск : <input type="text" name="words" /></p>
-					<p>
-						<input type="submit" name="search" value="Искать" />
-					</p>
-			</form>		
-		</div>
-
-		<div id="center">
-			<h1>Здесь будет название</h1>
-			<p>Здесь будет текст</p>
-			<hr>
-
-			<div class="article">
-				<h1>Заголовок статьи</h1>
-				<p>Текст статьи...</p>	
-				<p class="right">
-					<span>12.08.2012 15:45</span>
-					<br />
-					<a href="#">Подробнее</a>
-				</p>			
-			</div>
-			<hr>
-
-			<div id="pagination">
-				<p>
-					<a href="#">1</a>
-					<a href="#">2</a>
-					<a href="#">3</a>
-					<a href="#">4</a>
-				</p>
-			</div>	
-
-			<div class="clear"></div>
-			<hr />
-			<div id="footer">
-				<p>Все права защищены &copy; 2019</p>
-			</div>
-		</div>
-	</div> -->
 </body>
 </html>
