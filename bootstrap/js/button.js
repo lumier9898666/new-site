@@ -1,4 +1,4 @@
-let nightMode = document.querySelector('.night-mode');
+let nightMode = document.querySelector('#night-mode');
 let mode = true;
 
 nightMode.addEventListener('click', function(){

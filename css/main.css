@@ -1,12 +1,21 @@
 body{
-	/*margin: 0;
-	padding: 0;*/
-	background-color: #000000;
+  	background-color: #000000;
 	color: #ffffff;
-}
-html, body{
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+ }
+
+html{
 	height: 100%;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
 }
+
+  
+
 
 
 
@@ -159,10 +168,31 @@ input[type="checkbox"]::before {
     top: 0;
   left: 0;
   background: #fff;
-  transform: scale(1.1);
-  box-shadow: 0 2px 5px rgba(0,0,0, .2);
   transition: 0.5s;
 }
 input:checked[type="checkbox"]::before {
   left: 20px;
 }
+
+#Almamedov {
+	font-size: normal;
+	text-align: center;
+	color: red;
+	font-family: Georgia, 'Times New Roman', Times, sans-serif;
+}
+
+label{
+	color: #000000;
+
+}
+
+label:hover{
+	background-color: ;
+	cursor: pointer;
+}
+
+.margin-2{
+	margin: 2%;
+}
+
+

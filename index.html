@@ -20,10 +20,9 @@
 			<div class="row">
 				<nav role="navigation" class="navbar navbar-inverse">
 					<div class="container">
-
+						<h1 id="Almamedov" class="visible-xs">Almamedov.uz</h1>
 						<div class="navbar-header">
 							<button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
-
 								<span class="sr-only">
 									Toggle navigation
 								</span>
@@ -53,8 +52,8 @@
 
 								<li>
 
-									<div class="night-mode visible-xs">								
-						  				<input type="checkbox">
+									<div class="visible-xs">								
+						  				<input type="checkbox" id="night-mode">
 						  				<script type="text/javascript" src="bootstrap/js/button.js"></script>
 									</div>
 
@@ -97,10 +96,11 @@
 
 						<div class="col-xs-12 col-md-3 col-md-pull-3 col-sm-4 col-lg-3 col-lg-pull-3">
 
-							<div class="night-mode2 hidden-xs">								
-						  		<input type="checkbox">
+														
+						  		<input type="checkbox" class="night-mode2 hidden-xs">
 						  		<script type="text/javascript" src="bootstrap/js/button2.js"></script>
-							</div>
+						  		<div class="margin-2"></div>
+							
 							
 
 							<div class="panel panel-info">
@@ -111,7 +111,9 @@
 										<div class="form-group">
 											<div class="input-group">
 												<input type="text" name="login" class="form-control input-lg" placeholder="Логин">
+												<div class="margin-2"></div>
 												<input type="password" name="password" class="form-control input-lg" placeholder="Пароль">
+													<div class="margin-2"></div>
 													<button class="btn btn-default btn-lg-3 col-xs-12" type="submit" name="auth">Войти</button>
 													<button class="btn btn-default btn-lg-6 col-xs-12" type="submit"><a href="#">Зарегистрироваться</a></button>
 											</div>								
@@ -126,27 +128,27 @@
 									<form name="poll" action="function.php" method="post">
 										<div class="form-group">
 											<div class="input-group">
-												<table class="table">
+												<table class="table" >
 													<span>Оцените сайт</span>
 													<tr>
-														<td><input type="radio" name="variant" value="1" checked></td>
-														 <td>Вариант 1</td>
+														<td><input type="radio" name="variant" value="1" checked id="1"></td>
+														<td> <label for="1" >Вариант 1</label></td>
 													</tr>
 													<tr>
-														<td><input type="radio" name="variant" value="2"></td>
-														<td>Вариант 2</td>
+														<td><input type="radio" name="variant" value="2" id="2"></td>
+														<td> <label for="2">Вариант 2</label></td>
 													</tr>
 													<tr>
-														<td><input type="radio" name="variant" value="3"></td>
-														<td>Вариант 3</td>
+														<td><input type="radio" name="variant" value="3" id="3"></td>
+														<td> <label for="3">Вариант 3</label></td>
 													</tr>
 													<tr>
-														<td><input type="radio" name="variant" value="4"></td>
-														<td>Вариант 4</td>
+														<td><input type="radio" name="variant" value="4" id="4"></td>
+														<td> <label for="4">Вариант 4</label></td>
 													</tr>
 													<tr>
-														<td><input type="radio" name="variant" value="5"></td>
-														<td>Вариант 5</td>
+														<td><input type="radio" name="variant" value="5" id="5"></td>
+														<td> <label for="5">Вариант 5</label></td>
 													</tr>
 												</table>
 												<button class="btn btn-info btn-lg-3 col-xs-12" type="submit" name="poll">Голосовать</button>
@@ -180,13 +182,21 @@
 
 								<div id="pagination">
 
-									<p>
-										<a href="#">1</a>
-										<a href="#">2</a>
-										<a href="#">3</a>
-										<a href="#">4</a>
-									</p>
-
+									<nav aria-label="...">
+									  <ul class="pagination">
+									    <li class="page-item disabled">
+									      <a class="page-link" href="#" tabindex="-1">Предыдущая</a>
+									    </li>
+									    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+									    <li class="page-item">
+									      <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+									    </li>
+									    <li class="page-item"><a class="page-link" href="#">3</a></li>
+									    <li class="page-item">
+									      <a class="page-link" href="#">Следующая</a>
+									    </li>
+									  </ul>
+									</nav>
 								</div>	
 
 							</div>
